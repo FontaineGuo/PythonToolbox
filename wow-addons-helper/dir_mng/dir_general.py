@@ -1,8 +1,8 @@
 import os, shutil
 from dir_mng import file_tools
 
-current_path = os.path.dirname(__file__)
-print(current_path)
+# current_path = os.path.dirname(__file__)
+# print(current_path)
 def get_dir_path():
     pass
 
@@ -33,13 +33,20 @@ def copy_dir(src_dir, tgt_dir):
             copy_dir(s_file, t_file)
         
 
-def del_dir(dirPath):
-    shutil.rmtree(dirPath)
+def del_dir(dir_path):
+    shutil.rmtree(dir_path)
 
-def _check_path():
-    pass
+def check_wow_retail_path(dir_path):
+    dir_names = dir_path.split('\\')
+    if (dir_names[-1] == "_retail_") and (dir_names[-2] == "World of Warcraft"):
+        return True
+        # print("found it !")
+    else:
+        return  False
+        # print("Not found it !")
 
 
 # test
 ## del_dir('C:\\Users\\Fontaine\\Desktop\\Temp\\Addons')
 ## copy_dir('C:\\Users\\Fontaine\\Desktop\\Temp\\SICP','C:\\Users\\Fontaine\\Desktop\\Temp\\teest_dir')
+## check_wow_retail_path("G:\\TempStorge\\asd\\qwd\\World of Warcraft\\_retail_")
