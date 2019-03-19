@@ -23,10 +23,11 @@ def copy_dir(src_dir, tgt_dir):
                 # do not copy this file
                 if not file_tools.checkMd5(s_file, t_file):
                     shutil.copy(s_file, t_file)
+                    yield s_file
             else:
                 # if the file not exists , copy it directly
                 shutil.copy(s_file, t_file)
-
+                yield s_file
 
 
         if os.path.isdir(s_file):
@@ -50,3 +51,6 @@ def check_wow_retail_path(dir_path):
 ## del_dir('C:\\Users\\Fontaine\\Desktop\\Temp\\Addons')
 ## copy_dir('C:\\Users\\Fontaine\\Desktop\\Temp\\SICP','C:\\Users\\Fontaine\\Desktop\\Temp\\teest_dir')
 ## check_wow_retail_path("G:\\TempStorge\\asd\\qwd\\World of Warcraft\\_retail_")
+for s in copy_dir('C:\\Users\\Fontaine\\Desktop\\Temp\\SICP','C:\\Users\\Fontaine\\Desktop\\Temp\\teest_dir'):
+    print(s)
+
