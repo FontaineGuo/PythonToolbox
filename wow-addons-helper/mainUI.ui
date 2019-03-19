@@ -29,7 +29,7 @@
      </font>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <property name="iconSize">
      <size>
@@ -74,7 +74,7 @@
        </rect>
       </property>
      </widget>
-     <widget class="QPushButton" name="chose_btn_one">
+     <widget class="QPushButton" name="lb1_chose_btn_one">
       <property name="geometry">
        <rect>
         <x>760</x>
@@ -105,7 +105,7 @@
        <string>Choose the fold path of /'World of Warcraft/_retail_'</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="chose_btn_two">
+     <widget class="QPushButton" name="lb1_chose_btn_two">
       <property name="geometry">
        <rect>
         <x>760</x>
@@ -122,8 +122,8 @@
      <zorder>backup_detail_text</zorder>
      <zorder>backup_path_text</zorder>
      <zorder>label</zorder>
-     <zorder>chose_btn_one</zorder>
-     <zorder>chose_btn_two</zorder>
+     <zorder>lb1_chose_btn_one</zorder>
+     <zorder>lb1_chose_btn_two</zorder>
     </widget>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
