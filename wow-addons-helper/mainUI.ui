@@ -29,7 +29,7 @@
      </font>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <property name="iconSize">
      <size>
@@ -41,7 +41,7 @@
      <attribute name="title">
       <string>BackUp</string>
      </attribute>
-     <widget class="QProgressBar" name="backupProcessBar">
+     <widget class="QProgressBar" name="backup_process_bar">
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -54,7 +54,7 @@
        <number>50</number>
       </property>
      </widget>
-     <widget class="QTextBrowser" name="backupDetailText">
+     <widget class="QTextBrowser" name="backup_detail_text">
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -64,7 +64,7 @@
        </rect>
       </property>
      </widget>
-     <widget class="QTextBrowser" name="backupPathText">
+     <widget class="QTextBrowser" name="backup_path_text">
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -74,7 +74,7 @@
        </rect>
       </property>
      </widget>
-     <widget class="QPushButton" name="choseBtnOne">
+     <widget class="QPushButton" name="chose_btn_one">
       <property name="geometry">
        <rect>
         <x>760</x>
@@ -105,7 +105,7 @@
        <string>Choose the fold path of /'World of Warcraft/_retail_'</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="choseBtnOne_2">
+     <widget class="QPushButton" name="chose_btn_two">
       <property name="geometry">
        <rect>
         <x>760</x>
@@ -118,18 +118,18 @@
        <string>PushButton</string>
       </property>
      </widget>
-     <zorder>backupProcessBar</zorder>
-     <zorder>backupDetailText</zorder>
-     <zorder>backupPathText</zorder>
+     <zorder>backup_process_bar</zorder>
+     <zorder>backup_detail_text</zorder>
+     <zorder>backup_path_text</zorder>
      <zorder>label</zorder>
-     <zorder>choseBtnOne</zorder>
-     <zorder>choseBtnOne_2</zorder>
+     <zorder>chose_btn_one</zorder>
+     <zorder>chose_btn_two</zorder>
     </widget>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
       <string>Import</string>
      </attribute>
-     <widget class="QTextBrowser" name="importDetailText">
+     <widget class="QTextBrowser" name="import_detail_text">
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -139,7 +139,7 @@
        </rect>
       </property>
      </widget>
-     <widget class="QProgressBar" name="importProcessBar">
+     <widget class="QProgressBar" name="import_process_bar">
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -152,7 +152,7 @@
        <number>24</number>
       </property>
      </widget>
-     <widget class="QTextBrowser" name="importPathText">
+     <widget class="QTextBrowser" name="import_path_text">
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -162,7 +162,7 @@
        </rect>
       </property>
      </widget>
-     <widget class="QPushButton" name="choseBtn2">
+     <widget class="QPushButton" name="lb2_chose_btn_one">
       <property name="geometry">
        <rect>
         <x>760</x>
@@ -193,7 +193,7 @@
        <string>Choose the fold path of /'World of Warcraft/_retail_'</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="choseBtn2_2">
+     <widget class="QPushButton" name="lb2_chose_btn_two">
       <property name="geometry">
        <rect>
         <x>760</x>
@@ -206,12 +206,12 @@
        <string>PushButton</string>
       </property>
      </widget>
-     <zorder>importDetailText</zorder>
-     <zorder>importProcessBar</zorder>
-     <zorder>importPathText</zorder>
+     <zorder>import_detail_text</zorder>
+     <zorder>import_process_bar</zorder>
+     <zorder>import_path_text</zorder>
      <zorder>label_2</zorder>
-     <zorder>choseBtn2</zorder>
-     <zorder>choseBtn2_2</zorder>
+     <zorder>lb2_chose_btn_one</zorder>
+     <zorder>lb2_chose_btn_two</zorder>
     </widget>
    </widget>
   </widget>
