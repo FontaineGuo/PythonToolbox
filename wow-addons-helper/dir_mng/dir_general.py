@@ -46,12 +46,7 @@ def check_wow_retail_path(dir_path):
         return  False
         # print("Not found it !")
 
-def count_files(path):
-    count = 0
-    for root,dirs, files in os.walk(path):
-        for f in files:
-            count += 1
-    return count
+
 # test
 ## del_dir('C:\\Users\\Fontaine\\Desktop\\Temp\\Addons')
 ## copy_dir('C:\\Users\\Fontaine\\Desktop\\Temp\\SICP','C:\\Users\\Fontaine\\Desktop\\Temp\\teest_dir')
