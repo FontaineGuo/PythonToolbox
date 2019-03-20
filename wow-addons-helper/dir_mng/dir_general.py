@@ -1,6 +1,6 @@
 import os, shutil
 from dir_mng import file_tools
-
+import ntpath
 # current_path = os.path.dirname(__file__)
 # print(current_path)
 def get_dir_path():
@@ -27,11 +27,10 @@ def copy_dir(src_dir, tgt_dir):
             else:
                 # if the file not exists , copy it directly
                 shutil.copy(s_file, t_file)
-            yield s_file
+            yield [s_file, t_file]
 
 
         if os.path.isdir(s_file):
-            yield s_file
             yield  from copy_dir(s_file, t_file)
 
 
@@ -47,18 +46,22 @@ def check_wow_retail_path(dir_path):
         return  False
         # print("Not found it !")
 
-
+def count_files(path):
+    count = 0
+    for root,dirs, files in os.walk(path):
+        for f in files:
+            count += 1
+    return count
 # test
 ## del_dir('C:\\Users\\Fontaine\\Desktop\\Temp\\Addons')
 ## copy_dir('C:\\Users\\Fontaine\\Desktop\\Temp\\SICP','C:\\Users\\Fontaine\\Desktop\\Temp\\teest_dir')
 ## check_wow_retail_path("G:\\TempStorge\\asd\\qwd\\World of Warcraft\\_retail_")
 # for s in copy_dir('C:\\Users\\Fonta\\Desktop\\Temp\\SICP','C:\\Users\\Fonta\\Desktop\\Temp\\teest_dir'):
 #     print(s)
-for s in copy_dir('C:\\Users\\Fonta\\Desktop\\Temp\\SICP', 'C:\\Users\\Fonta\\Desktop\\Temp\\teest_dir'):
-    print(s)
+# for s in copy_dir('C:\\Users\\Fontaine\\Desktop\\Temp\\SICP', 'C:\\Users\\Fontaine\\Desktop\\Temp\\teest_dir'):
+#     print(s[0] + ' to ' + s[1])
 
-
-
+#
 
 
 
