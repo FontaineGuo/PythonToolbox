@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
+  <widget class="QWidget" name="main_win">
    <widget class="QTabWidget" name="tab_ctr">
     <property name="geometry">
      <rect>
@@ -102,7 +102,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Choose the fold path of /'World of Warcraft/_retail_'</string>
+       <string>Choose the fold path of /'World of Warcraft/_retail_'  for backup</string>
       </property>
      </widget>
      <widget class="QPushButton" name="lb1_chose_btn_two">
@@ -190,7 +190,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Choose the fold path of /'World of Warcraft/_retail_'</string>
+       <string>Choose the fold path of /'World of Warcraft/_retail_' for import</string>
       </property>
      </widget>
      <widget class="QPushButton" name="lb2_chose_btn_two">
