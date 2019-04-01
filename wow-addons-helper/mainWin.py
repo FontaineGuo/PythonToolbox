@@ -14,12 +14,12 @@ class AddonHelper(QMainWindow, Ui_MainWindow):
         super(QMainWindow, self).__init__(parent)
         self.setupUi(self)
         #<----------------import the style config--------------->
-        try:
-            with open('style.qss') as f:
-                style = f.read()
-                self.setStyleSheet(style)
-        except:
-            print("open stylesheet error")
+        # try:
+        #     with open('style.qss') as f:
+        #         style = f.read()
+        #         self.setStyleSheet(style)
+        # except:
+        #     print("open stylesheet error")
         # <----------------import the style config--------------->
         # <--------------------init the btn--------------------->
         self.lb1_chose_btn_one.clicked.connect(self.chose_backup_path_btn_click)
