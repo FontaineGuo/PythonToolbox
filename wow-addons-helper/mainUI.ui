@@ -6,212 +6,343 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>918</width>
-    <height>407</height>
+    <width>1024</width>
+    <height>523</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>540</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="main_win">
-   <widget class="QTabWidget" name="tab_ctr">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>1</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1024</width>
+     <height>505</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1024</width>
+     <height>520</height>
+    </size>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <widget class="QWidget" name="widget" native="true">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>881</width>
-      <height>371</height>
+      <x>10</x>
+      <y>20</y>
+      <width>1001</width>
+      <height>491</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-     </font>
-    </property>
-    <property name="currentIndex">
-     <number>0</number>
-    </property>
-    <property name="iconSize">
+    <property name="maximumSize">
      <size>
-      <width>16</width>
-      <height>16</height>
+      <width>1001</width>
+      <height>510</height>
      </size>
     </property>
-    <widget class="QWidget" name="tab">
-     <attribute name="title">
-      <string>BackUp</string>
-     </attribute>
-     <widget class="QProgressBar" name="backup_process_bar">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>100</y>
-        <width>831</width>
-        <height>23</height>
-       </rect>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>981</width>
+       <height>481</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
       </property>
-      <property name="value">
-       <number>50</number>
-      </property>
-     </widget>
-     <widget class="QTextBrowser" name="backup_detail_text">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>140</y>
-        <width>791</width>
-        <height>192</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QTextBrowser" name="backup_path_text">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>50</y>
-        <width>691</width>
-        <height>31</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="lb1_chose_btn_one">
-      <property name="geometry">
-       <rect>
-        <x>760</x>
-        <y>10</y>
-        <width>75</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>10</y>
-        <width>700</width>
-        <height>30</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Choose the fold path of /'World of Warcraft/_retail_'  for backup</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="lb1_chose_btn_two">
-      <property name="geometry">
-       <rect>
-        <x>760</x>
-        <y>50</y>
-        <width>75</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
-     </widget>
-     <zorder>backup_process_bar</zorder>
-     <zorder>backup_detail_text</zorder>
-     <zorder>backup_path_text</zorder>
-     <zorder>label</zorder>
-     <zorder>lb1_chose_btn_one</zorder>
-     <zorder>lb1_chose_btn_two</zorder>
-    </widget>
-    <widget class="QWidget" name="tab_2">
-     <attribute name="title">
-      <string>Import</string>
-     </attribute>
-     <widget class="QTextBrowser" name="import_detail_text">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>140</y>
-        <width>791</width>
-        <height>192</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QProgressBar" name="import_process_bar">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>100</y>
-        <width>831</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="value">
-       <number>24</number>
-      </property>
-     </widget>
-     <widget class="QTextBrowser" name="import_path_text">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>50</y>
-        <width>691</width>
-        <height>31</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="lb2_chose_btn_one">
-      <property name="geometry">
-       <rect>
-        <x>760</x>
-        <y>10</y>
-        <width>75</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_2">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>10</y>
-        <width>700</width>
-        <height>30</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Choose the fold path of /'World of Warcraft/_retail_' for import</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="lb2_chose_btn_two">
-      <property name="geometry">
-       <rect>
-        <x>760</x>
-        <y>50</y>
-        <width>75</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
-     </widget>
-     <zorder>import_detail_text</zorder>
-     <zorder>import_process_bar</zorder>
-     <zorder>import_path_text</zorder>
-     <zorder>label_2</zorder>
-     <zorder>lb2_chose_btn_one</zorder>
-     <zorder>lb2_chose_btn_two</zorder>
+      <item>
+       <widget class="QTabWidget" name="tab_ctr">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <widget class="QWidget" name="tab">
+         <attribute name="title">
+          <string>BackUp</string>
+         </attribute>
+         <widget class="QWidget" name="verticalLayoutWidget_2">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>951</width>
+            <height>431</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="vl_1_1">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QGroupBox" name="groupBox">
+             <property name="title">
+              <string>Backup your addons</string>
+             </property>
+             <widget class="QWidget" name="verticalLayoutWidget_3">
+              <property name="geometry">
+               <rect>
+                <x>770</x>
+                <y>90</y>
+                <width>151</width>
+                <height>91</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="vl_1_2">
+               <item>
+                <widget class="QPushButton" name="lb1_chose_btn_one">
+                 <property name="text">
+                  <string>PushButton</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="lb1_chose_btn_two">
+                 <property name="text">
+                  <string>PushButton</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="verticalLayoutWidget_4">
+              <property name="geometry">
+               <rect>
+                <x>50</x>
+                <y>40</y>
+                <width>371</width>
+                <height>41</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="vl_1_3">
+               <item>
+                <widget class="QLabel" name="label">
+                 <property name="font">
+                  <font>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Choose the fold path of /'World of Warcraft/_retail_'  for backup</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="verticalLayoutWidget_5">
+              <property name="geometry">
+               <rect>
+                <x>49</x>
+                <y>89</y>
+                <width>691</width>
+                <height>94</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="vl_1_4">
+               <item>
+                <widget class="QTextBrowser" name="backup_path_text"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="verticalLayoutWidget_6">
+              <property name="geometry">
+               <rect>
+                <x>49</x>
+                <y>190</y>
+                <width>881</width>
+                <height>80</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="vl_1_5">
+               <item>
+                <widget class="QProgressBar" name="backup_process_bar">
+                 <property name="value">
+                  <number>50</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="verticalLayoutWidget_7">
+              <property name="geometry">
+               <rect>
+                <x>50</x>
+                <y>280</y>
+                <width>881</width>
+                <height>141</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="vl_1_6">
+               <item>
+                <widget class="QTextBrowser" name="backup_detail_text"/>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>Import</string>
+         </attribute>
+         <widget class="QWidget" name="verticalLayoutWidget_15">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>951</width>
+            <height>431</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="vl_2_1">
+           <item>
+            <widget class="QGroupBox" name="groupBox_3">
+             <property name="title">
+              <string>Import your addons</string>
+             </property>
+             <widget class="QWidget" name="verticalLayoutWidget_16">
+              <property name="geometry">
+               <rect>
+                <x>770</x>
+                <y>90</y>
+                <width>151</width>
+                <height>91</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="vl_2_2">
+               <item>
+                <widget class="QPushButton" name="lb2_chose_btn_one">
+                 <property name="text">
+                  <string>PushButton</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="lb2_chose_btn_two">
+                 <property name="text">
+                  <string>PushButton</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="verticalLayoutWidget_17">
+              <property name="geometry">
+               <rect>
+                <x>50</x>
+                <y>40</y>
+                <width>371</width>
+                <height>41</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="vl_2_3">
+               <item>
+                <widget class="QLabel" name="label_11">
+                 <property name="font">
+                  <font>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Choose the fold path of /'World of Warcraft/_retail_'  for backup</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="verticalLayoutWidget_18">
+              <property name="geometry">
+               <rect>
+                <x>49</x>
+                <y>89</y>
+                <width>691</width>
+                <height>94</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="vl_2_4">
+               <item>
+                <widget class="QTextBrowser" name="import_path_text"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="verticalLayoutWidget_19">
+              <property name="geometry">
+               <rect>
+                <x>49</x>
+                <y>190</y>
+                <width>881</width>
+                <height>80</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="vl_2_5">
+               <item>
+                <widget class="QProgressBar" name="import_process_bar">
+                 <property name="value">
+                  <number>50</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="verticalLayoutWidget_20">
+              <property name="geometry">
+               <rect>
+                <x>50</x>
+                <y>280</y>
+                <width>881</width>
+                <height>141</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="vl_2_6">
+               <item>
+                <widget class="QTextBrowser" name="import_detail_text"/>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </widget>
+      </item>
+     </layout>
     </widget>
    </widget>
   </widget>
