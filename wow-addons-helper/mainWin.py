@@ -14,12 +14,12 @@ class AddonHelper(QMainWindow, Ui_MainWindow):
         super(QMainWindow, self).__init__(parent)
         self.setupUi(self)
         #<----------------import the style config--------------->
-        # try:
-        #     with open('style.qss') as f:
-        #         style = f.read()
-        #         self.setStyleSheet(style)
-        # except:
-        #     print("open stylesheet error")
+        try:
+            with open('style.qss') as f:
+                style = f.read()
+                self.setStyleSheet(style)
+        except:
+            print("open stylesheet error")
         # <----------------import the style config--------------->
         # <--------------------init the btn--------------------->
         self.lb1_chose_btn_one.clicked.connect(self.chose_backup_path_btn_click)
@@ -99,7 +99,8 @@ class AddonHelper(QMainWindow, Ui_MainWindow):
         self.import_process_bar.setValue(0)
         self.import_detail_text.append("Extracting Addons.zip")
 
-        extract_addons.extract_package('.\\Addons', r'Addons.zip')
+        for info in extract_addons.extract_package('.\\Addons', r'Addons.zip'):
+             self.import_detail_text.append("extracting " + info)
         self.import_detail_text.append("Preparing file lists")
         self.__file_number = file_tools.count_files('.\\Addons')
 
@@ -108,9 +109,9 @@ class AddonHelper(QMainWindow, Ui_MainWindow):
         for log in dir_general.copy_dir(".\\Addons",self.__import_path):
             self.import_detail_text.append(log[0] + ' to ' + log[1])
             process_val = process_val + 1
-
             self.import_process_bar.setValue((process_val / float(self.__file_number)) * 100)
         dir_general.del_dir(".\\Addons")
+
         self.import_detail_text.append("import process was done")
 
 
