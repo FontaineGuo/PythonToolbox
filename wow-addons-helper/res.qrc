@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>src/icon/wow.png</file>
+  </qresource>
+</RCC>
