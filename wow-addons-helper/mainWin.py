@@ -43,6 +43,10 @@ class AddonHelper(QMainWindow, Ui_MainWindow):
     def chose_backup_path_btn_click(self):
         dir_path =  str(QFileDialog.getExistingDirectory(self, 'Select Directory'))
         dir_path = file_tools.format_path(dir_path)
+
+        self.backup_detail_text.clear()
+        self.backup_process_bar.setValue(0)
+
         if dir_general.check_wow_retail_path(dir_path):
             print("found the wow dir")
             self.__backup_path = dir_path
@@ -57,16 +61,23 @@ class AddonHelper(QMainWindow, Ui_MainWindow):
         if self.__backup_path == "":
             QMessageBox.about(self, "Title", "Please chose WOW folder")
             return
+
         self.backup_process_bar.setValue(0)
         process_val = 0
+        self.backup_detail_text.clear()
+
         for log in pack_addons.zip_dir(self.__backup_path, r'Addons.zip'):
             self.backup_detail_text.append(log)
             process_val = process_val + 1
             self.backup_process_bar.setValue((process_val/float(self.__file_number)) * 100)
-
+        self.backup_detail_text.append("Backup process was done")
     def chose_import_path_btn_click(self):
         dir_path = str(QFileDialog.getExistingDirectory(self, 'Select Directory'))
         dir_path = file_tools.format_path(dir_path)
+
+        self.import_detail_text.clear()
+        self.import_process_bar.setValue(0)
+
         if dir_general.check_wow_retail_path(dir_path):
             print("found the wow dir")
             self.__import_path = dir_path
@@ -83,11 +94,15 @@ class AddonHelper(QMainWindow, Ui_MainWindow):
         if not os.path.exists(r'Addons.zip'):
             QMessageBox.about(self, "Title", "Couldn't found backup zip file 'Addons.zip'")
             return
+
+        self.import_detail_text.clear()
         self.import_process_bar.setValue(0)
         self.import_detail_text.append("Extracting Addons.zip")
 
         extract_addons.extract_package('.\\Addons', r'Addons.zip')
+        self.import_detail_text.append("Preparing file lists")
         self.__file_number = file_tools.count_files('.\\Addons')
+
 
         process_val = 0
         for log in dir_general.copy_dir(".\\Addons",self.__import_path):
@@ -96,6 +111,7 @@ class AddonHelper(QMainWindow, Ui_MainWindow):
 
             self.import_process_bar.setValue((process_val / float(self.__file_number)) * 100)
         dir_general.del_dir(".\\Addons")
+        self.import_detail_text.append("import process was done")
 
 
 # <-----------------------define the funcation of player data----------------------------------------------->
