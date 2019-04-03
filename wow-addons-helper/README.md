@@ -8,6 +8,11 @@ Many [World of warcraft](https://wow.blizzard.cn/landing) players may have multi
 
 许多魔兽世界的玩家可能从多个渠道下载更新他们的插件。一些插件集合如Twitch或者大脚虽然提供了插件与设置的同步功能，但这些功能都基于其账户与桌面软件，这意味着玩家可能需要使用多个账户和软件才能在另外一台电脑上同步自己的插件与设置。所以我制作了这个工具来备份插件与设置，能将这些文件打包在一个zip中，然后使用这个工具与这个备份的zip文件快速的在新电脑的魔兽世界文件夹上还原插件设置。这个工具不再需要账户或者多个插件工具.
 
+### Screenshoot/截图
+<div align="center">
+    <img src="../images/wow_addons_helper_1.png" alt="Screenshot">
+</div>
+
 ## How to used them?/如何使用？
 + backup/备份
   1. select the Backup tab and then click __Path__ button to chose the "World of Warcraft/\_retail\_"  path.
@@ -32,10 +37,7 @@ Many [World of warcraft](https://wow.blizzard.cn/landing) players may have multi
     <img src="../images/wow_addons_helper_3.png" alt="import process" height="350" />
 </div>
 
-### Screenshoot/截图
-<div align="center">
-    <img src="../images/wow_addons_helper.png" alt="Screenshot">
-</div>
+
 
 
 ### License
