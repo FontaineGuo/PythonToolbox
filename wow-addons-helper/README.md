@@ -3,6 +3,11 @@
 
 魔兽世界插件助手，可以方便的协助玩家手动统一备份自己的插件与画面、插件设置，并快速的备份至另外的电脑上
 
+## About icon resource/关于美术资源
+All the icon resource was collected on [iconfont](https://www.iconfont.cn) for no commerical used
+
+所有的图标资源均来自[iconfont](https://www.iconfont.cn)，不做商业用途
+
 ## Why created this tools?/为什么制作这款工具？
 Many [World of warcraft](https://wow.blizzard.cn/landing) players may have multiple ways to download or update their addons.Some addons toolbox such as [Twitch](https://www.twitch.tv) or [Bigfoot](http://bigfoot.178.com/wow/) provide setting sync service but these service need accounts and desktop applications support which means you may need download many addons toolbox and login different accounts on another PC to sync your addons or setting profiles. So I made this tools to bakcup addons and seeting, which import them to a zip file, and then use this tool to unzip this zip file and import all the addons and setting to a WOW install location on new computer.This tools don't need any accounts or any other addons toolbox.
 
