@@ -41,7 +41,7 @@ class AddonHelper(QMainWindow, Ui_MainWindow):
 
 
     def chose_backup_path_btn_click(self):
-        dir_path =  str(QFileDialog.getExistingDirectory(self, 'Select Directory'))
+        dir_path = str(QFileDialog.getExistingDirectory(self, 'Select Directory'))
         dir_path = file_tools.format_path(dir_path)
 
         self.backup_detail_text.clear()
