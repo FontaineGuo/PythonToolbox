@@ -1,0 +1,1 @@
+pyinstaller -F -i src\icon\wow.ico -n "wow addons helper" mainWin.py -w
