@@ -39,7 +39,7 @@ def format_path(path):
 
 def count_files(path):
     count = 0
-    for root,dirs, files in os.walk(path):
+    for root,dirs, files in os.walk(path): 
         for f in files:
             count += 1
     return count
