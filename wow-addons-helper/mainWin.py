@@ -50,7 +50,8 @@ class AddonHelper(QMainWindow, Ui_MainWindow):
         if dir_general.check_wow_retail_path(dir_path):
             print("found the wow dir")
             self.__backup_path = dir_path
-            self.__file_number = file_tools.count_files(self.__backup_path)
+            self.__file_number = file_tools.count_files(os.path.join(self.__backup_path, 'Interface'))
+            self.__file_number = self.__file_number + file_tools.count_files(os.path.join(self.__backup_path, 'WTF'))
             self.backup_path_text.setText(dir_path)
         else:
             print("not found the wow dir")
