@@ -1,5 +1,5 @@
-import shutil
 import os
+import time
 from PIL import Image
 
 def get_exif_date(src_photo):
@@ -15,7 +15,9 @@ def get_exif_date(src_photo):
             return [True ,exif_data]
         else:
             print("Don't get!")
-            return [False, None]
+            create_time = os.stat(src_photo)
+            return [False, time.strftime("%Y-%m-%d",
+            time.localtime(create_time[-2]))]
     except Exception as e:
         print(e)
 
