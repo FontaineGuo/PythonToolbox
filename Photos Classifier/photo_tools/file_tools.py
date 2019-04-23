@@ -43,4 +43,4 @@ def move_photo_to_folder(src_folder, tgt_folder):
                 shutil.copy2(filename, temp_folder)
 
 
-move_photo_to_folder("C:\\Users\\Fonta\\Desktop\\Temp\\src", 'C:\\Users\\Fonta\\Desktop\\Temp\\tgt')
+# move_photo_to_folder("C:\\Users\\Fonta\\Desktop\\Temp\\src", 'C:\\Users\\Fonta\\Desktop\\Temp\\tgt')
