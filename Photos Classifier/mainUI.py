@@ -12,6 +12,10 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(437, 303)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("src/photo.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        MainWindow.setWindowIcon(icon)
+        MainWindow.setIconSize(QtCore.QSize(48, 48))
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.verticalLayoutWidget = QtWidgets.QWidget(self.centralwidget)
@@ -42,7 +46,7 @@ class Ui_MainWindow(object):
         self.TxtB_outputPath.setObjectName("TxtB_outputPath")
         self.verticalLayout_5.addWidget(self.TxtB_outputPath)
         self.verticalLayoutWidget_2 = QtWidgets.QWidget(self.groupBox)
-        self.verticalLayoutWidget_2.setGeometry(QtCore.QRect(270, 30, 121, 41))
+        self.verticalLayoutWidget_2.setGeometry(QtCore.QRect(270, 40, 121, 41))
         self.verticalLayoutWidget_2.setObjectName("verticalLayoutWidget_2")
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_2)
         self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
@@ -52,7 +56,7 @@ class Ui_MainWindow(object):
         self.Btn_input.setObjectName("Btn_input")
         self.verticalLayout_3.addWidget(self.Btn_input)
         self.verticalLayoutWidget_5 = QtWidgets.QWidget(self.groupBox)
-        self.verticalLayoutWidget_5.setGeometry(QtCore.QRect(270, 100, 121, 41))
+        self.verticalLayoutWidget_5.setGeometry(QtCore.QRect(270, 110, 121, 41))
         self.verticalLayoutWidget_5.setObjectName("verticalLayoutWidget_5")
         self.verticalLayout_6 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_5)
         self.verticalLayout_6.setContentsMargins(0, 0, 0, 0)
@@ -80,7 +84,7 @@ class Ui_MainWindow(object):
         self.progressBar.setObjectName("progressBar")
         self.verticalLayout_8.addWidget(self.progressBar)
         self.verticalLayoutWidget_8 = QtWidgets.QWidget(self.groupBox)
-        self.verticalLayoutWidget_8.setGeometry(QtCore.QRect(10, 200, 251, 73))
+        self.verticalLayoutWidget_8.setGeometry(QtCore.QRect(10, 200, 381, 73))
         self.verticalLayoutWidget_8.setObjectName("verticalLayoutWidget_8")
         self.verticalLayout_9 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_8)
         self.verticalLayout_9.setContentsMargins(0, 0, 0, 0)
@@ -99,7 +103,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Photo Classifier"))
         self.groupBox.setTitle(_translate("MainWindow", " Photo Classifier"))
         self.Btn_input.setText(_translate("MainWindow", "Input path"))
         self.Btn_output.setText(_translate("MainWindow", "Output path"))
