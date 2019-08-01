@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>437</width>
+    <height>303</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>411</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="title">
+        <string> Photo Classifier</string>
+       </property>
+       <widget class="QWidget" name="verticalLayoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>32</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QTextBrowser" name="TxtB_inputPath"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="verticalLayoutWidget_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>100</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetDefaultConstraint</enum>
+         </property>
+         <item>
+          <widget class="QTextBrowser" name="TxtB_outputPath"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="verticalLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>30</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QPushButton" name="Btn_input">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string>Input path</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="verticalLayoutWidget_5">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>100</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <item>
+          <widget class="QPushButton" name="Btn_output">
+           <property name="text">
+            <string>Output path</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="verticalLayoutWidget_6">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>160</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <item>
+          <widget class="QPushButton" name="Btn_start">
+           <property name="text">
+            <string>Start</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="verticalLayoutWidget_7">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>160</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_8">
+         <item>
+          <widget class="QProgressBar" name="progressBar">
+           <property name="value">
+            <number>24</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="verticalLayoutWidget_8">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>200</y>
+          <width>251</width>
+          <height>73</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_9">
+         <item>
+          <widget class="QTextBrowser" name="TxtB_process_detial"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -4,6 +4,27 @@ import stat
 import time
 from photo_tools import exif_tools
 
+def format_path(path):
+    # final_path = path.replace('/', '\\')
+    name_list = path.split('/')
+    final_path = name_list[0] + '\\'
+    for single_name in name_list[1:]:
+        final_path = os.path.join(final_path,single_name)
+    return final_path
+
+def count_files(path):
+    count = 0
+    for root,dirs, files in os.walk(path):
+        for filename in files:
+            filename = os.path.join(root, filename)
+
+            f_name, extend_name = os.path.splitext(filename)
+            if extend_name.lower() not in ('.jpg', '.png'):
+                continue
+            else:
+                count += 1
+    return count
+
 
 def move_photo_to_folder(src_folder, tgt_folder):
     # create temp folder for information unknown photo
@@ -36,11 +57,12 @@ def move_photo_to_folder(src_folder, tgt_folder):
                     os.mkdir(tgt_single_folder)
                     # use copy2 to preserver metadata
                     shutil.copy2(filename, tgt_location)
+                    yield [filename, tgt_location]
                 else:
                     shutil.copy2(filename, tgt_location)
-
+                    yield [filename, tgt_location]
             else:
                 shutil.copy2(filename, temp_folder)
-
+                yield [filename, tgt_location]
 
 # move_photo_to_folder("C:\\Users\\Fonta\\Desktop\\Temp\\src", 'C:\\Users\\Fonta\\Desktop\\Temp\\tgt')
