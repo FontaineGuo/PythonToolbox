@@ -1,6 +1,0 @@
-<!DOCTYPE RCC>
-<RCC>
-  <qresource prefix="icon">
-    <file>src/photo.ico</file>
-  </qresource>
-</RCC>
