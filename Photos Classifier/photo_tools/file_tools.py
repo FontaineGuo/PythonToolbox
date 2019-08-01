@@ -6,6 +6,9 @@ from photo_tools import exif_tools
 
 def format_path(path):
     # final_path = path.replace('/', '\\')
+    if path == "":
+        return ""
+
     name_list = path.split('/')
     final_path = name_list[0] + '\\'
     for single_name in name_list[1:]:
